@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class HomeController {
 
-    @RequestMapping("/")
+    @RequestMapping(value={"/", "/home"})
     public String home(Device device) {
         if (device.isMobile()) {
             System.out.println("Hello mobile user!");
@@ -19,9 +19,21 @@ public class HomeController {
         return "index";
     }
     
-    @RequestMapping("/Hello")
-    public String testJump() {
-    	return "Hello";
+    @RequestMapping("/mail")
+    public String mailJump() {
+    	return "mail";
     }
-
+    
+    @RequestMapping("/contacts")
+    public String contactsJump() {
+    	return "contacts";
+    }
+    
+    @RequestMapping("/calendar")
+    public String calendarJump() {
+    	return "calendar";
+    }
+    
+    
+    
 }

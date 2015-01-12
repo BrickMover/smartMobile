@@ -24,24 +24,25 @@
     </style>
 </head>
 <body>
-	<div data-role="collapsible" data-theme="c" data-content-theme="b">
-	<h2>Choose a car model...</h2>
-	    <ul data-role="listview" data-filter="true">
-	        <li><a href="index.html">Acura</a></li>
-	        <li><a href="index.html">Audi</a></li>
-	        <li><a href="index.html">BMW</a></li>
-	        <li><a href="index.html">Cadillac</a></li>
-	        <li><a href="index.html">Chrysler</a></li>
-	        <li><a href="index.html">Dodge</a></li>
-	        <li><a href="index.html">Ferrari</a></li>
-	        <li><a href="index.html">Ford</a></li>
-	        <li><a href="index.html">GMC</a></li>
-	        <li><a href="index.html">Honda</a></li>
-	    </ul>
-	</div>
-	<DIV data-content-theme="b">
-		<input type="text" data-role="date" data-inline="true">
+	<DIV data-role="page" id="mypage">
+		<DIV data-role="header" data-theme="b">
+		  <div data-role="navbar">
+		    <ul>
+		      <li><a href="#" data-ajax="false" data-icon="home">首页</a></li>
+		      <li><a href="mail" data-ajax="false" data-icon="mail">邮件</a></li>
+		      <li><a href="contacts" data-ajax="false" data-icon="user">通讯录</a></li>
+		      <li><a href="calendar" data-ajax="false" data-icon="calendar">日历</a></li>
+		    </ul>
+		  </div>
+		</DIV>
+		
+		<DIV data-role="content">
+			<A href="Hehe" data-ajax="false">ti</A>
+		</DIV>
+		
+		<DIV data-role="footer" data-position="fixed" data-theme="b">
+		<H1>@wyt</H1>
+		</DIV>
 	</DIV>
-	
 </body>
 </html>
